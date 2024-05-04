@@ -1,20 +1,25 @@
 #include <iostream>
+#include <string>
+using namespace std;
 
-void hbd(std::string name);
+double add(double a, double b);
 
-int main(int argc, char const *argv[])
+int main()
 {
+    double a;
+    double b;
 
-    std::string name = "anurag";
-
-    hbd(name);
-
+    cout << "enter #1= " << endl;
+    cin >> a;
+    cout << "enter #2= " << endl;
+    cin >> b;
+    add(a, b);
     return 0;
 }
-void hbd(std::string name)
+double add(double a, double b)
 {
-    std::cout << "happy birthday to " << name << "!\n";
-    std::cout << "happy birthday to " << name << "!\n";
-    std::cout << "happy birthday to " << name << "!\n";
-    std::cout << "happy birthday to " << name << "!\n";
-}
+    double c;
+    c = a + b;
+    cout << "the sum is " << c << endl;
+    return c;
+};
